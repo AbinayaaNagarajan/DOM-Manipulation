@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 // Part 1
-const mainEl = document.createElement("main");
-const mainBgColor = getComputedStyle(document.documentElement).getPropertyValue("--main-bg");
- mainEl.style.backgroundColor = `var(${mainBgColor})`;
+const mainEl = document.querySelector("main");
+ mainEl.style.backgroundColor = 'var(--main-bg)';
 mainEl.innerHTML = "<h1>DOM Manipulation</h1>";
 mainEl.classList.add("flex-ctr");
 document.body.appendChild(mainEl);
@@ -11,9 +10,7 @@ document.body.appendChild(mainEl);
 // Part 2
 const topMenuEl = document.getElementById("top-menu"); 
 topMenuEl.style.height = "100%";
-const topMenuBgColor =
- document.documentElement.style.getPropertyValue("--top-menu-bg");
-topMenuEl.style.backgroundColor = topMenuBgColor; 
+topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 topMenuEl.classList.add("flex-around");
 
 const menuLinks = [

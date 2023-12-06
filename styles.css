@@ -9,11 +9,6 @@
     --sub-menu-bg: #3da4ab;
   }
 
-  main {
-    background-color: var(--main-bg);
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
   
   body {
     font-family: Tahoma, Geneva, sans-serif;
@@ -45,9 +40,6 @@
   }
   
   #top-menu a:hover {
-    background-color: var( --top-menu-bg);
-  }
-  #top-menu {
     background-color: var( --top-menu-bg);
   }
  
